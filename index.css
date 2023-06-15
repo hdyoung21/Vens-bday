@@ -1,12 +1,52 @@
-.container {
+.carousel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
   }
   
-  aside {
-    width: 25%;
+  .carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
   
-  #aboutme {
-    width: 75%;
+  .carousel img.active {
+    opacity: 1;
+  }
+  
+  .content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .content p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  #countdown {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
   }
   
