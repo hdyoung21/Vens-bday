@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+  }
+  
+  aside {
+    width: 25%;
+  }
+  
+  #aboutme {
+    width: 75%;
+  }
+  
